@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JetFlix</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/navbar.js"></script>
+</head>
+<body class="color-bg">
+
+<!-- NavBar -->
+<nav class="flex flex-row items-center justify-center py-4 color-navbar fixed w-full z-50">
+    <img src="img/jetflix-1.png"
+         class="w-auto h-16 px-16"
+         alt="jetflix-logo">
+
+    <div class="flex flex-row gap-4 ml-auto mr-4 px-16 items-center">
+        <div class="flex flex-col items-center">
+            <a onclick="redirect('index.html')" class="text-white cursor-pointer hover:text-blue-500">Home</a>
+        </div>
+        <div class="flex flex-col items-center">
+            <a onclick="redirect('news.html')" class="text-white cursor-pointer hover:text-blue-500">News & Popular</a>
+        </div>
+        <div class="flex flex-col items-center">
+            <a onclick="redirect('movies.html')" class="text-white cursor-pointer hover:text-blue-500">Movies</a>
+        </div>
+        <div class="flex flex-col items-center">
+            <a onclick="redirect('detail.html')" class="text-white cursor-pointer hover:text-blue-500">Detail</a>
+            <hr class="hr-color-blue w-full">
+        </div>
+        <a onclick="redirect('register.html')"
+           class="text-white bg-color-button rounded-full px-3 py-2 cursor-pointer hover:bg-gray-800">
+            Sign Up
+        </a>
+    </div>
+</nav>
+
+<!-- Jumbotron -->
+<img src="img/movies/jumbotron.png"
+     class="h-auto w-screen max-w-full z--1 relative top-jumbotron left-0"
+     alt="jumbotron">
+
+<!-- Movie Info -->
+<div class="flex flex-col w-full pos-jumbotron-detail relative">
+    <!-- Genre -->
+    <div class="flex flex-row gap-2 items-end justify-end text-center">
+        <span class="text-white font-semibold bg-color-genre-75 rounded-full w-32 py-1">Adventure</span>
+        <span class="text-white font-semibold bg-color-genre-75 rounded-full w-32 py-1">Family</span>
+        <span class="text-white font-semibold bg-color-genre-75 rounded-full w-32 py-1">Comedy</span>
+    </div>
+
+
+    <!-- Quick Info -->
+    <div class="flex flex-row gap-2 items-end justify-end mt-6">
+        <span class="text-color-genre font-bold text-xl">2023</span>
+        <span class="text-color-genre font-bold text-xl">.</span>
+        <span class="text-color-genre font-bold text-xl">PG</span>
+        <span class="text-color-genre font-bold text-xl">.</span>
+        <span class="text-color-genre font-bold text-xl">2h 15m</span>
+    </div>
+
+    <!-- Synopsis -->
+    <span class="text-white font-semibold text-justify items-end justify-end mt-2 w-1/3 ml-auto">A young mermaid makes a deal with a sea witch to trade her beautiful voice for human legs so she can discover the world above water and impress a prince.</span>
+
+    <span class="text-white font-semibold mt-2 w-1/3 bg-color-genre-75 rounded-md py-2 text-xl cursor-pointer text-center items-end justify-end ml-auto">Watch S1 E1</span>
+</div>
+
+<!-- Details -->
+<div class="flex flex-col text-left mt-2 px-16 gap-2">
+    <hr class="hr-color-gray my-2">
+
+    <div class="flex flex-row gap-12">
+        <span class="text-color-genre w-24 text-2xl">Director</span>
+        <span class="text-color-name font-light text-2xl">Steven Caple Jr.</span>
+    </div>
+
+    <hr class="hr-color-gray my-2">
+
+    <div class="flex flex-row gap-12">
+        <span class="text-color-genre w-24 text-2xl">Writer</span>
+        <span class="text-color-name font-light text-2xl">Joby Harold . Darnell Metayer . Josh Peters</span>
+    </div>
+
+    <hr class="hr-color-gray my-2">
+
+    <div class="flex flex-row gap-12">
+        <span class="text-color-genre w-24 text-2xl">Stars</span>
+        <span class="text-color-name font-light text-2xl">Anthony Ramos . Dominique Fishback . Luna Lauren Velez</span>
+    </div>
+
+    <hr class="hr-color-gray my-2">
+</div>
+
+<!-- Episodes -->
+<div class="flex flex-col px-16">
+    <span class="text-white font-semibold text-4xl mt-12 items-start justify-start">Episodes</span>
+    <hr class="my-2 hr-color-gray">
+
+    <!-- Season -->
+    <div class="flex flex-row gap-12 px-5 mt-6">
+        <span class="text-white font-semibold text-2xl cursor-pointer">Season 1</span>
+        <span class="text-color-genre font-semibold text-2xl cursor-pointer">Season 2</span>
+        <span class="text-color-genre font-semibold text-2xl cursor-pointer">Season 3</span>
+    </div>
+
+    <!-- Episodes -->
+    <div class="flex flex-col gap-12 mt-6 px-16">
+        <!-- Episode 1 -->
+        <div class="flex flex-row">
+            <img src="img/detail/img.png"
+                 class="w-1/4 h-auto"
+                 alt="episode-1">
+
+            <div class="flex flex-col w-3/4 ml-6">
+                <span class="text-white font-semibold text-3xl mt-2">The Great Sebastian</span>
+                <div class="flex flex-row gap-2 items-center justify-start mt-3">
+                    <span class="text-color-genre font-bold text-xl">S1 E1</span>
+                    <span class="text-color-genre font-bold text-xl">.</span>
+                    <span class="text-color-genre font-bold text-xl">12 Sep 2023</span>
+                    <span class="text-color-genre font-bold text-xl">.</span>
+                    <span class="text-color-genre font-bold text-xl">22m</span>
+                </div>
+                <span class="text-white text-justify items-end justify-end mt-5 ">Sebastian becomes a peace ambassador and tries to make peace with the power hungry Sharkanians, with Ariel following him to their land.</span>
+            </div>
+        </div>
+
+        <!-- Episode 2 -->
+        <div class="flex flex-row">
+            <img src="img/detail/img_1.png"
+                 class="w-1/4 h-auto"
+                 alt="episode-1">
+
+            <div class="flex flex-col w-3/4 ml-6">
+                <span class="text-white font-semibold text-3xl mt-2">Stormy</span>
+                <div class="flex flex-row gap-2 items-center justify-start mt-3">
+                    <span class="text-color-genre font-bold text-xl">S1 E2</span>
+                    <span class="text-color-genre font-bold text-xl">.</span>
+                    <span class="text-color-genre font-bold text-xl">19 Sep 2023</span>
+                    <span class="text-color-genre font-bold text-xl">.</span>
+                    <span class="text-color-genre font-bold text-xl">22m</span>
+                </div>
+                <span class="text-white text-justify items-end justify-end mt-5 ">Ariel rides a wild seahorse named Stormy against her father's wishes and gets lost in the wilderness.</span>
+            </div>
+        </div>
+
+        <!-- Episode 3 -->
+        <div class="flex flex-row">
+            <img src="img/detail/img_2.png"
+                 class="w-1/4 h-auto"
+                 alt="episode-1">
+
+            <div class="flex flex-col w-3/4 ml-6">
+                <span class="text-white font-semibold text-3xl mt-2">Urchin</span>
+                <div class="flex flex-row gap-2 items-center justify-start mt-3">
+                    <span class="text-color-genre font-bold text-xl">S1 E3</span>
+                    <span class="text-color-genre font-bold text-xl">.</span>
+                    <span class="text-color-genre font-bold text-xl">26 Sep 2023</span>
+                    <span class="text-color-genre font-bold text-xl">.</span>
+                    <span class="text-color-genre font-bold text-xl">22m</span>
+                </div>
+                <span class="text-white text-justify items-end justify-end mt-5 ">Ariel became friends with an orphaned merboy who has fallen in with the underwater gangster 'Lobster Mobster'</span>
+            </div>
+        </div>
+
+        <!-- Episode 4 -->
+        <div class="flex flex-row">
+            <img src="img/detail/img_3.png"
+                 class="w-1/4 h-auto"
+                 alt="episode-1">
+
+            <div class="flex flex-col w-3/4 ml-6">
+                <span class="text-white font-semibold text-3xl mt-2">Double Bubble</span>
+                <div class="flex flex-row gap-2 items-center justify-start mt-3">
+                    <span class="text-color-genre font-bold text-xl">S1 E4</span>
+                    <span class="text-color-genre font-bold text-xl">.</span>
+                    <span class="text-color-genre font-bold text-xl">3 Oct 2023</span>
+                    <span class="text-color-genre font-bold text-xl">.</span>
+                    <span class="text-color-genre font-bold text-xl">22m</span>
+                </div>
+                <span class="text-white text-justify items-end justify-end mt-5 ">Ariel babysits two twin merbabies.</span>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-8 hr-color-gray w-full">
+
+    <div class="flex flex-col items-center">
+        <span class="text-white font-semibold bg-color-genre text-center w-max px-16 py-2 rounded-md cursor-pointer">
+            View More
+        </span>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="flex flex-col items-center justify-center mt-3 px-16 my-8 relative">
+    <hr class="hr-color-blue my-4 w-full">
+
+    <img src="img/jetflix-1.png"
+         class="w-auto h-16"
+         alt="jetflix-logo"/>
+
+    <!-- Footer Links -->
+    <div class="flex flex-row w-full justify-center text-center my-4">
+        <!-- Links Left -->
+        <div class="flex flex-col w-1/3 gap-5">
+            <span class="text-white font-light cursor-pointer">FAQ</span>
+            <span class="text-white font-light cursor-pointer">Media Center</span>
+            <span class="text-white font-light cursor-pointer">Terms of Use</span>
+            <span class="text-white font-light cursor-pointer">Corporate Information</span>
+        </div>
+
+        <!-- Links Center -->
+        <div class="flex flex-col w-1/3 gap-5">
+            <span class="text-white font-light cursor-pointer">Help Center</span>
+            <span class="text-white font-light cursor-pointer">Contact Us</span>
+            <span class="text-white font-light cursor-pointer">Privacy</span>
+            <span class="text-white font-light cursor-pointer">Report</span>
+        </div>
+
+        <!-- Links Right -->
+        <div class="flex flex-col w-1/3 gap-5">
+            <span class="text-white font-light cursor-pointer">Account</span>
+            <span class="text-white font-light cursor-pointer">Ways to Watch</span>
+            <span class="text-white font-light cursor-pointer">Cookie Preferences</span>
+            <span class="text-white font-light cursor-pointer">Speed Test</span>
+        </div>
+    </div>
+
+    <!-- Footer Others-->
+    <div class="flex flex-row items-center text-center w-full mt-6">
+        <!-- Social Media -->
+        <div class="flex flex-col">
+            <span class="text-white font-semibold mb-4">Follow Us</span>
+            <div class="flex flex-row">
+                <img src="img/footer/social_media_logs.png"
+                     class="w-auto h-8 cursor-pointer"
+                     alt="facebook-logo">
+            </div>
+        </div>
+
+        <!-- App Downloads -->
+        <div class="flex flex-row ml-auto">
+            <img src="img/footer/google_play.png"
+                 class="w-auto h-8 cursor-pointer"
+                 alt="app-download">
+
+            <img src="img/footer/app_store.png"
+                 class="w-auto h-8 cursor-pointer"
+                 alt="app-download">
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

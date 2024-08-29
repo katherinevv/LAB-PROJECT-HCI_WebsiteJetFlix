@@ -1,0 +1,319 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JetFlix</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/navbar.js"></script>
+</head>
+<body class="color-bg">
+
+<!-- NavBar -->
+<nav class="flex flex-row items-center justify-center py-4 color-navbar fixed w-full z-50">
+    <img src="img/jetflix-1.png"
+         class="w-auto h-16 px-16"
+         alt="jetflix-logo">
+
+    <div class="flex flex-row gap-4 ml-auto mr-4 px-16 items-center">
+        <div class="flex flex-col items-center">
+            <a onclick="redirect('index.html')" class="text-white cursor-pointer hover:text-blue-500">Home</a>
+        </div>
+        <div class="flex flex-col items-center">
+            <a onclick="redirect('news.html')" class="text-white cursor-pointer hover:text-blue-500">News & Popular</a>
+        </div>
+        <div class="flex flex-col items-center">
+            <a onclick="redirect('movies.html')" class="text-white cursor-pointer hover:text-blue-500">Movies</a>
+            <hr class="hr-color-blue w-full">
+        </div>
+        <div class="flex flex-col items-center">
+            <a onclick="redirect('detail.html')" class="text-white cursor-pointer hover:text-blue-500">Detail</a>
+        </div>
+        <a onclick="redirect('register.html')"
+           class="text-white bg-color-button rounded-full px-3 py-2 cursor-pointer hover:bg-gray-800">
+            Sign Up
+        </a>
+    </div>
+</nav>
+
+<!-- Jumbotron -->
+<img src="img/movies/jumbotron.png"
+     class="h-auto w-screen max-w-full z--1 relative top-jumbotron left-0"
+     alt="jumbotron">
+
+<!-- Movie Info -->
+<div class="flex flex-col w-full pos-jumbotron-detail relative">
+    <!-- Genre -->
+    <div class="flex flex-row gap-2 items-end justify-end text-center">
+        <span class="text-white font-semibold bg-color-genre-75 rounded-full w-32 py-1">Adventure</span>
+        <span class="text-white font-semibold bg-color-genre-75 rounded-full w-32 py-1">Family</span>
+        <span class="text-white font-semibold bg-color-genre-75 rounded-full w-32 py-1">Comedy</span>
+    </div>
+
+
+    <!-- Quick Info -->
+    <div class="flex flex-row gap-2 items-end justify-end mt-6">
+        <span class="text-color-genre font-bold text-xl">2023</span>
+        <span class="text-color-genre font-bold text-xl">.</span>
+        <span class="text-color-genre font-bold text-xl">PG</span>
+        <span class="text-color-genre font-bold text-xl">.</span>
+        <span class="text-color-genre font-bold text-xl">2h 15m</span>
+    </div>
+
+    <!-- Synopsis -->
+    <span class="text-white font-semibold text-justify items-end justify-end mt-2 w-1/3 ml-auto">A young mermaid makes a deal with a sea witch to trade her beautiful voice for human legs so she can discover the world above water and impress a prince.</span>
+
+    <span class="text-white font-semibold mt-2 w-1/3 bg-color-genre-75 rounded-md py-2 text-xl cursor-pointer text-center items-end justify-end ml-auto">Watch Now</span>
+</div>
+
+<!-- Movies -->
+<div class="flex flex-col items-center justify-center gap-12 movies">
+    <!-- Action -->
+    <div class="flex flex-col w-full">
+        <span class="text-white font-bold text-4xl items-start justify-start text-left px-5">Action</span>
+        <div class="flex flex-row gap-6 px-5 mt-3">
+            <!-- Action 1 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/action/1.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Dungeons & Dragons: Honour Among Thieves</span>
+            </div>
+            <!-- Action 2 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/action/img.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Fast X</span>
+            </div>
+            <!-- Action 3 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/action/img_1.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">65</span>
+            </div>
+            <!-- Action 4 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/action/img_2.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Shazam! Fury of the Gods</span>
+            </div>
+            <!-- Action 5 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/action/img_3.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Detective Knight: Independence</span>
+            </div>
+
+            <span class="flex flex-col text-white text-2xl font-bold items-center justify-center text-center bor">
+                >
+            </span>
+        </div>
+    </div>
+
+    <!-- Adventure -->
+    <div class="flex flex-col w-full">
+        <span class="text-white font-bold text-4xl items-start justify-start text-left px-5">Adventure</span>
+        <div class="flex flex-row gap-6 px-5 mt-3">
+            <!-- Adventure 1 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/adventure/img.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Transformers: Rise of the Beasts</span>
+            </div>
+            <!-- Adventure 2 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/adventure/img_1.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Peter Pan & Wendy</span>
+            </div>
+            <!-- Adventure 3 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/adventure/img_2.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Guardians of the Galaxy Vol. 3</span>
+            </div>
+            <!-- Adventure 4 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/adventure/img_3.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Ant-Man and the Wasp: Quantumania</span>
+            </div>
+            <!-- Adventure 5 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/adventure/img_4.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">The Super Mario Bros. Movie</span>
+            </div>
+
+            <span class="flex flex-col text-white text-2xl font-bold items-center justify-center text-center bor">
+                >
+            </span>
+        </div>
+    </div>
+
+    <!-- Fantasy -->
+    <div class="flex flex-col w-full">
+        <span class="text-white font-bold text-4xl items-start justify-start text-left px-5">Fantasy</span>
+        <div class="flex flex-row gap-6 px-5 mt-3">
+            <!-- Fantasy 1 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/fantasy/img.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">The Little Mermaid</span>
+            </div>
+            <!-- Fantasy 2 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/fantasy/img_1.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Spider-Man: Across the Spider-Verse</span>
+            </div>
+            <!-- Fantasy 3 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/fantasy/img_2.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Knights of the Zodiac</span>
+            </div>
+            <!-- Fantasy 4 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/fantasy/img_3.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Elemental</span>
+            </div>
+            <!-- Fantasy 5 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/fantasy/img_4.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Ladybug & Cat Noir: The Movie</span>
+            </div>
+
+            <span class="flex flex-col text-white text-2xl font-bold items-center justify-center text-center bor">
+                >
+            </span>
+        </div>
+    </div>
+
+    <!-- Horror -->
+    <div class="flex flex-col w-full">
+        <span class="text-white font-bold text-4xl items-start justify-start text-left px-5">Horror</span>
+        <div class="flex flex-row gap-6 px-5 mt-3">
+            <!-- Horror 1 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/horror/img.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Winnie the Pooh: blood and Honey</span>
+            </div>
+            <!-- Horror 2 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/horror/img_1.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Evil Dead Rise</span>
+            </div>
+            <!-- Horror 3 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/horror/img_2.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">The Boogeyman</span>
+            </div>
+            <!-- Horror 4 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/horror/img_3.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Scream VI</span>
+            </div>
+            <!-- Horror 5 -->
+            <div class="flex flex-col text-white text-center items-center justify-center w-1/5 gap-3">
+                <img src="img/movies/horror/img_4.png"
+                     class="w-full h-auto"
+                     alt="movie-1">
+                <span class="font-light">Renfield</span>
+            </div>
+
+            <span class="flex flex-col text-white text-2xl font-bold items-center justify-center text-center bor">
+                >
+            </span>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="flex flex-col items-center justify-center mt-3 px-16 my-8 relative">
+    <hr class="hr-color-blue my-4 w-full">
+    <img src="img/jetflix-1.png"
+         class="w-auto h-16"
+         alt="jetflix-logo"/>
+
+    <!-- Footer Links -->
+    <div class="flex flex-row w-full justify-center text-center my-4">
+        <!-- Links Left -->
+        <div class="flex flex-col w-1/3 gap-5">
+            <span class="text-white font-light cursor-pointer">FAQ</span>
+            <span class="text-white font-light cursor-pointer">Media Center</span>
+            <span class="text-white font-light cursor-pointer">Terms of Use</span>
+            <span class="text-white font-light cursor-pointer">Corporate Information</span>
+        </div>
+
+        <!-- Links Center -->
+        <div class="flex flex-col w-1/3 gap-5">
+            <span class="text-white font-light cursor-pointer">Help Center</span>
+            <span class="text-white font-light cursor-pointer">Contact Us</span>
+            <span class="text-white font-light cursor-pointer">Privacy</span>
+            <span class="text-white font-light cursor-pointer">Report</span>
+        </div>
+
+        <!-- Links Right -->
+        <div class="flex flex-col w-1/3 gap-5">
+            <span class="text-white font-light cursor-pointer">Account</span>
+            <span class="text-white font-light cursor-pointer">Ways to Watch</span>
+            <span class="text-white font-light cursor-pointer">Cookie Preferences</span>
+            <span class="text-white font-light cursor-pointer">Speed Test</span>
+        </div>
+    </div>
+
+    <!-- Footer Others-->
+    <div class="flex flex-row items-center text-center w-full mt-6">
+        <!-- Social Media -->
+        <div class="flex flex-col">
+            <span class="text-white font-semibold mb-4">Follow Us</span>
+            <div class="flex flex-row">
+                <img src="img/footer/social_media_logs.png"
+                     class="w-auto h-8 cursor-pointer"
+                     alt="facebook-logo">
+            </div>
+        </div>
+
+        <!-- App Downloads -->
+        <div class="flex flex-row ml-auto">
+            <img src="img/footer/google_play.png"
+                 class="w-auto h-8 cursor-pointer"
+                 alt="app-download">
+
+            <img src="img/footer/app_store.png"
+                 class="w-auto h-8 cursor-pointer"
+                 alt="app-download">
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
